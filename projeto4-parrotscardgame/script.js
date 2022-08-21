@@ -21,19 +21,19 @@ function cronometro(){
 }
 
 //perguntar e validar quantidade de cartas da partida
-function invalido(){
-    if(qtdDeCartas>=4 && qtdDeCartas<=14 && qntDeCartas%2==0){
-        return false;
-    }else{
-        return true;
-    }
-}
 function perguntar(){
     while(invalido()){
         qntDeCartas=Number(prompt("Quer jogar com quantas cartas?"));
     }
     //função pra começar o jogo (começar) ----------------ok
     começar(); 
+}
+function invalido(){
+    if(qtdDeCartas>=4 && qtdDeCartas<=14 && qntDeCartas%2==0){
+        return false;
+    }else{
+        return true;
+    }
 }
 
 //começar o jogo e distribuir as cartas
