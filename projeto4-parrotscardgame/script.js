@@ -25,7 +25,7 @@ function perguntar(){
     while(invalido()){
         qntDeCartas=Number(prompt("Quer jogar com quantas cartas?"));
     }
-    //função pra começar o jogo (começar) ----------------ok
+    //função pra começar o jogo (começar)
     começar(); 
 }
 function invalido(){
@@ -44,7 +44,7 @@ function começar(){
         baralho.push(carta);
     }
     baralho.sort(random);
-    //função para mostrar as cartas (mostrar) --------------------ok
+    //função para mostrar as cartas (mostrar)
     mostrar()  
 }
 
@@ -52,7 +52,7 @@ function começar(){
 function mostrar(){
     let tabuleiro=document.querySelector(".tabuleiro");
     for(let i=0; i<baralho.length; i++){
-        //chama a função que desvira a carta (desvira) ---------------ok
+        //chama a função que desvira a carta (desvira)
         let cartinha= `
             <li class="carta virada" onClick="desvira(this)">
                 <div class='frente face'>
