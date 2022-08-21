@@ -127,8 +127,22 @@ function confereSeTerminou(){
 }
 
 //vira a carta
-function vira()
+function vira(){
+    cartaUm.classList.remove("virada");
+    cartaDois.classList.remove("virada");
+    fixa();
+}
 
+//terminar o jogo
+function terminar(){
+    alert(`Você terminou o jogo em ${movimentos} movimentos e ${tempo}segundos`);
+    const recomeçar=confirm("Deseja jogar novamente?");
+    if(recomeçar==true){
+        window.location.reload();
+    }else{
+        console.log("Obrigado por jogar");
+    }
+} 
 
-
+//chama a função inicial
 perguntar();
