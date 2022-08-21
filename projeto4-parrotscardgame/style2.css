@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(226, 233, 206);
+    text-align: center;
+}
+.topo{
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+}
+.titulo{
+    color: #75B79E;
+    width: 100%;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+}
+.relogio{
+    width: 60px;
+    height: 60px;
+    font-size: 34px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: all 1s linear;
+    background-color: rgb(139, 4, 67);
+    color: rgb(226, 233, 206);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.mostrar-relogio {
+  left: 0;
+}
+.tabuleiro {
+    width: 100%;
+    margin: 20% auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+.carta {
+    width: 200px;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    perspective: 600px;
+}
+.face{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(226, 233, 206);
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: flex;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 150px;
+    height: auto;
+    position: absolute;
+}
+.costas {
+    transform: rotateY(180deg);
+}  
+.virada .costas {
+    transform: rotateY(0deg);
+}
+.virada .frente {
+    transform: rotateY(-180deg);
+}
+  
