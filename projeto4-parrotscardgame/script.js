@@ -7,7 +7,6 @@ let tempo=0;
 let acertos=0;
 let movimentos=0;
 
-
 // aleatoriedade
 function random() {
     return Math.random() - 0.5;
