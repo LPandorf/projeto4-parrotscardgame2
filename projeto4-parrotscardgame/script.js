@@ -1,6 +1,8 @@
+(function(){
+
 let qntDeCartas;
 let baralho=[];
-let tipo=["1","2","3","4","5","6","7"];
+let passaro=["1","2","3","4","5","6","7"];
 let cartaUm, cartaDois;
 let idCronometro;
 let tempo=0;
@@ -146,3 +148,5 @@ function terminar(){
 
 //chama a função inicial
 perguntar();
+
+})
