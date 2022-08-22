@@ -1,3 +1,1 @@
-(function(){
-    prompt("com quantas cartas deseja jogar?");
-})
+prompt("com quantas cartas deseja jogar?");
