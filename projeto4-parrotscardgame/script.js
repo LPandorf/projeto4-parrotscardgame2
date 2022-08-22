@@ -1,5 +1,3 @@
-(function(){
-
 let qntDeCartas;
 let baralho=[];
 let passaro=["1","2","3","4","5","6","7"];
@@ -24,6 +22,7 @@ function cronometro(){
 
 //perguntar e validar quantidade de cartas da partida
 function perguntar(){
+    alert("oiiiiiiiiii");
     while(invalido()){
         qntDeCartas=Number(prompt("Quer jogar com quantas cartas?"));
     }
@@ -31,7 +30,7 @@ function perguntar(){
     começar(); 
 }
 function invalido(){
-    if(qtdDeCartas>=4 && qtdDeCartas<=14 && qntDeCartas%2==0){
+    if(qntDeCartas>=4 && qntDeCartas<=14 && qntDeCartas%2==0){
         return false;
     }else{
         return true;
@@ -148,5 +147,3 @@ function terminar(){
 
 //chama a função inicial
 perguntar();
-
-})
