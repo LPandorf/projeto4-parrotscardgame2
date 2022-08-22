@@ -22,7 +22,6 @@ function cronometro(){
 
 //perguntar e validar quantidade de cartas da partida
 function perguntar(){
-    alert("oiiiiiiiiii");
     while(invalido()){
         qntDeCartas=Number(prompt("Quer jogar com quantas cartas?"));
     }
