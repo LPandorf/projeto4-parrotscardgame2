@@ -10,7 +10,7 @@ body{
 .titulo{
     color: #75B79E;
     width: 100%;
-    height: 63px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,7 @@ body{
 }
 .tabuleiro {
     width: 100%;
-    margin: 20% auto;
+    margin: 3% auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

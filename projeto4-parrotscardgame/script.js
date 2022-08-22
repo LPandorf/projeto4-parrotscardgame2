@@ -65,7 +65,7 @@ function mostrar(){
         tabuleiro.innerHTML+= cartinha;
     }
     //chama função que desvira todas as cartas depois de 2600 segundos (desviraTudo)
-    setTimeout(desviraTudo, 2600);
+    desviraTudo();
 }
 
 //desvira a carta
@@ -94,7 +94,7 @@ function desvira(carta){
                 confereSeTerminou();
             }else{
                 //chama função que vira a carta (vira)
-                setTimeout(vira, 2600);
+                setTimeout(vira, 1000);
             }
         }
     }
